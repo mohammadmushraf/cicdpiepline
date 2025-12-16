@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammad Mushraf | DevOps Engineer</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Dubai corporate + realistic 3D depth */
+    :root {
+      --bg: #eef2f6;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #0f2a44;
+      --accent: #c9a24d;
+      --shadow-soft: 0 8px 20px rgba(0,0,0,0.08);
+      --shadow-hover: 0 20px 40px rgba(0,0,0,0.12);
+      --border: #e5e7eb;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #f8fafc, var(--bg));
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    /* Header with subtle depth */
+    header {
+      background: linear-gradient(180deg, #0f2a44, #102f4e);
+      color: #ffffff;
+      padding: 100px 8% 80px;
+      text-align: center;
+      box-shadow: inset 0 -12px 30px rgba(0,0,0,0.25);
+    }
+
+    header h1 {
+      font-size: 2.9rem;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+    }
+
+    header p {
+      margin-top: 14px;
+      color: #d1d5db;
+      font-size: 1.05rem;
+    }
+
+    section {
+      max-width: 1150px;
+      margin: auto;
+      padding: 80px 8%;
+    }
+
+    h2 {
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      width: 70px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), transparent);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 35px;
+    }
+
+    /* 3D Cards */
+    .card {
+      background: linear-gradient(180deg, #ffffff, #f9fafb);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--border);
+      transform-style: preserve-3d;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.01);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .card p, .card li {
+      font-size: 0.95rem;
+      color: #374151;
+    }
+
+    ul { padding-left: 18px; }
+
+    /* Skill pills */
+    .skills .card {
+      text-align: center;
+      font-weight: 600;
+      color: var(--primary);
+      background: linear-gradient(145deg, #ffffff, #f1f5f9);
+    }
+
+    footer {
+      background: linear-gradient(180deg, #0f2a44, #0c2238);
+      color: #d1d5db;
+      text-align: center;
+      padding: 40px;
+      font-size: 0.9rem;
+      box-shadow: inset 0 12px 30px rgba(0,0,0,0.3);
+    }
+
+    footer span { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mohammad Mushraf</h1>
+  <p>AWS DevOps Engineer · Cloud Infrastructure · CI/CD Automation</p>
+</header>
+
+<section>
+  <h2>Professional Summary</h2>
+  <div class="card">
+    <p>AWS DevOps Engineer with hands-on experience in designing, automating, and operating secure cloud platforms. Specialized in enterprise-grade CI/CD pipelines, Kubernetes orchestration, and infrastructure as code following real-world production standards.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>DevOps Engineer – Visys Cloud Technologies</h3>
+      <p><em>Aug 2024 – Oct 2025</em></p>
+      <ul>
+        <li>Designed and maintained Jenkins CI/CD pipelines for production deployments</li>
+        <li>Deployed Dockerized workloads on Kubernetes (EKS)</li>
+        <li>Managed AWS infrastructure: EC2, VPC, IAM, S3, RDS, ALB</li>
+        <li>Provisioned infrastructure using Terraform and Ansible</li>
+        <li>Implemented monitoring using CloudWatch, Prometheus, and Grafana</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Key Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Enterprise DevOps CI/CD Pipeline</h3>
+      <p>Production-ready CI/CD pipeline integrating Jenkins, Docker, Kubernetes, Selenium testing, and centralized monitoring.</p>
+    </div>
+    <div class="card">
+      <h3>MERN Stack Containerized Deployment</h3>
+      <p>Containerized MERN application using optimized multi-stage Docker builds and Docker Compose.</p>
+    </div>
+  </div>
+</section>
+
+<section class="skills">
+  <h2>Technical Expertise</h2>
+  <div class="grid">
+    <div class="card">AWS Cloud Services</div>
+    <div class="card">Docker & Kubernetes</div>
+    <div class="card">Jenkins & GitHub Actions</div>
+    <div class="card">Terraform & Ansible</div>
+    <div class="card">Monitoring & Observability</div>
+    <div class="card">Linux & Networking</div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: mushrafmohd17@gmail.com</p>
+    <p>Phone: +971 52 432 0289</p>
+    <p>Location: Dubai, UAE</p>
+  </div>
+</section>
+
+<footer>
+  © 2025 Mohammad Mushraf
+</footer>
+
+</body>
+</html>
