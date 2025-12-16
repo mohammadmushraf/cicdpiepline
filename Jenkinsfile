@@ -2,13 +2,6 @@ pipeline {
     agent any
 
     stages {
-
-        stage('Clone GitHub Repo') {
-            steps {
-                git branch: 'main', url: 'https://github.com/mohammadmushraf/cicdpipeline.git'
-            }
-        }
-
         stage('Run Nginx Docker Container') {
             steps {
                 sh '''
