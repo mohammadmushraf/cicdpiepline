@@ -3,14 +3,13 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code') {
+        stage('Clone GitHub Repo') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/mohammadmushraf/cicdpipeline.git'
+                git branch: 'main', url: 'https://github.com/mohammadmushraf/cicdpipeline.git'
             }
         }
 
-        stage('Deploy with Docker & Nginx') {
+        stage('Run Nginx Docker Container') {
             steps {
                 sh '''
                 docker rm -f nginx-static || true
@@ -25,4 +24,3 @@ pipeline {
         }
     }
 }
-
